@@ -1,13 +1,16 @@
 {
     "type": "ItemTurret",
     "health": 2001911,
-    "size": 4,
-    "reload": 600,
+    "size": 5,
+    "maxAmmo": 911,
+    "reload": 6.586169045,
     "shake": 4,
-    "range": 16384,
+    "range": 7288,
     "recoil": 5,
     "shootSound": "ALLAH_AKBAR",
-    "shootCone": 360,
+    "shootCone": 30,
+    "rotateSpeed": 5,
+    "inaccuracy": 9.11,
     "shoot":{
         "type": "ShootSpread",
         "shots": 1,
@@ -16,33 +19,42 @@
     "ammoTypes": {
         "Boeing-767-223ER": {
             "type": "MissleBulletType",
-            "height": 100,
-            "width": 100,
-            "speed": 10,
+            "height": 75,
+            "width": 75,
+            "speed": 8,
             "damage": 2749,
             "homingRange": 100000,
             "homingPower": 911,
             "reflectable": false,
             "absorbable": false,
             "splashDamage": 2749,
-            "splashRadius": 911,
+            "splashDamageRadius": 7288,
             "lifetime": 1000000,
             "hitEffect": "reactorExplosion",
             "sprite":"chrono-strange-shit-boeing-767-223er",
+            "status": "911",
+            "statusDuration": 546.6, 
             "lightColor": "000000",
-            "buildingDamageMultiplier": 9.11
+            "buildingDamageMultiplier": 10.11,
+            "ammoMultiplier": 911.0
         }
     },
-    "buildCostMultiplier": 0.65,
+    "buildCostMultiplier": 0.1875,
     "category": "turret",
     "research":{
         "parent": "duo",
         "requirements":[
-            "copper/50"
+            "copper/911",
+            "lead/911",
+            "graphite/911",
+            "titanium/911"
         ]
       },
     "requirements": [
-        "copper/10"
+        "copper/911",
+        "lead/911",
+        "graphite/911",
+        "titanium/911"
     ]
 }
     
